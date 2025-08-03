@@ -1,0 +1,110 @@
+* {
+  background-color: #121212;
+  box-sizing: border-box;
+}
+
+
+.gallery-img:hover {
+  transform: scale(1.03); 
+}
+
+.selected-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+
+.selected-image {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: #121212;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1010;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #333;
+}
+
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 15px;
+  background-clip: padding-box;
+}
+
+
+.gallery-img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 1000px;
+  max-height: 700px;
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(18, 18, 18, 0.6);
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 1010;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(51, 51, 51, 0.8);
+}
+
+.left-btn {
+  left: 20px;
+}
+
+.right-btn {
+  right: 20px;
+}
+
+
